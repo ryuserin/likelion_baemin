@@ -1,0 +1,17 @@
+.field-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.store-input {
+    flex: 1;
+}
+
+.input-label {
+    width: 130px;
+}
+
+.store-enroll-form > .store-add-btn {
+    margin: 0px auto;
+    margin-top: 15px;
+}

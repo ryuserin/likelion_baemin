@@ -1,0 +1,15 @@
+{% extends 'baeminapp/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/create.css' %}">
+{% endblock %}
+
+{% block main %}
+<form class="store-enroll-form" method="POST" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+		{{ form.as_p }}
+    <button class="store-add-btn">주문하기</button>
+</form>
+
+{% endblock %}

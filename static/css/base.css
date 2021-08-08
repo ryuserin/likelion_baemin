@@ -1,0 +1,70 @@
+@font-face{
+    font-family: 'BMDOHYEON';
+    src: url('../BMDOHYEON.ttf');
+}
+
+* {
+    font-size: 100%;
+    font-family: 'BMDOHYEON', sans-serif;
+    width: auto;
+}
+
+:root {
+    --main-bg-color: #2ac1bc;
+    --font-white: white;
+    --border-grey: rgb(233, 233, 233);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin-top: 100px;
+}
+
+a,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.body-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+    width: 100%;
+    background-color: var(--main-bg-color);
+    padding: 1.5rem 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+.header__title {
+    font-weight: 700;
+}
+
+.body-header img {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.banner {
+    max-width: 100%;
+    margin:auto; 
+}
+
+main {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+    border: 1px solid var(--border-grey);
+    margin-bottom: 50px;
+}
+
+.menu__title {
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.menu__price {
+    margin-bottom: 5px;
+}
+
+.store-add-btn {
+    margin: auto;
+}

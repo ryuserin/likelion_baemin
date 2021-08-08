@@ -1,0 +1,31 @@
+{% extends 'baeminapp/base.html' %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/detail.css' %}">
+{% endblock %}
+
+{% block main %}
+<div class="store-card">
+    <div class="store-item">
+        <a href="{% url 'detail' store.id %}">
+            <img class="store-img" src='{{ store.image.url }}' alt="대표사진">
+        </a>
+        <a class="store-detail" href="{% url 'detail' store.id %}">
+            <span class="detail__title font-lg">{{store.title}}</span>
+            <span class="font-sm">주소: {{store.address}}</span>
+        </a>
+    </div>
+    <div class="menu">
+        <span class="menu__title">{{store.menu_title}}</span>
+        <span class="menu__price font-sm">20,000원</span>
+        <img class = "store-img" src="{{ store.menu_image.url }}" alt="메뉴 이미지">
+    </div>
+
+    <div class="store-add-btn">
+        <a href="{% url 'order' store.id %}">주문하기</a>
+    </div>
+
+</div>
+{% endblock %}

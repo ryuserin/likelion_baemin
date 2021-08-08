@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/store.css' %}" />
+
+        {% block head %} {% endblock %}
+
+        <title>home</title>
+
+    </head>
+
+    <body> 
+      <header class="body-header">
+          <a href="{% url 'home' %}">
+            <img src="{% static 'image/logo.png' %}" alt="" />
+          </a>
+          <a href="{% url 'home' %}">
+            <span class="header__title">배달의 민족</span>
+          </a>
+      </header>
+
+      <table class="banner">
+      <tr>
+      <td><img src="{% static 'image/ad1.png' %}" alt=""></td>
+      <td><img src="{% static 'image/ad2.png' %}" alt=""></td>
+      </tr>
+      </table>
+
+      <main class="main">{% block main %} {% endblock %}</main>
+
+    </body>
+
+
+</html>
